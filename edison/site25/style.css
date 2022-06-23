@@ -22,7 +22,7 @@ body{
 }
 
 .container .icon{
-    width: 200px;
+    width: 190px;
 }
 
 .container .icon path{
@@ -129,11 +129,37 @@ body{
         stroke-dashoffset: 1560;
     }
     80%{
-        stroke-dashoffset: 3120; /* 1560*2 */
+        stroke-dashoffset: 3120; 
         fill: transparent;
     }
     100%{
         stroke-dashoffset: 3120;
         fill: #31e8ff;
+    }
+}
+.container .icon.unicorn path{
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 0;
+    stroke: #d41b93;
+}
+
+.container .icon.unicorn:hover path{
+    animation: animate-unicorn 2s linear forwards;
+}
+
+@keyframes animate-unicorn{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    50%{
+        stroke-dashoffset: 1600;
+    }
+    80%{
+        stroke-dashoffset: 3200; 
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3200;
+        fill: #d41b93;
     }
 }
